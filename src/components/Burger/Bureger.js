@@ -11,10 +11,10 @@ const Burger = (props)=> {
         }).reduce((arr,element)=>{
             return arr.concat(element);
         },[]);
-    console.log(transformedIngredients);
     return(
      <div className={classes.Burger}>
          <BurgerIngredient type="bread-top"/>
+         {transformedIngredients}
          <BurgerIngredient type="bread-bottom"/>
      </div>
     );
